@@ -17,4 +17,4 @@ Reactron is a simple boilerplate for getting an Electron-React developer environ
 1. Add build scripts to deploy app, so that the boilerplate reaches our Minimally Viable Product (MVP). This just means that it has all of the base functionality necessary to actually do what we want it to do.
 2. Create documentation for the repo, adding descriptions of the different packages/modules we are using and why. When I first started in web development there were a lot of times I asked myself "why" and had to forge ahead with only the answer of "because it works"
 3. Build options into boilerplate deployment to begin with a more robust application depending on use cases yet to be identified.
-  NOTE TO READERS: If you have a suggestion for something you would like the option of having built into the repo please reach out! I would like to build a public backlog for this project
+ 1. *Note* If you have a suggestion for something you would like the option of having built into the repo please reach out via Issues for now! I would like to build a public backlog for this project
