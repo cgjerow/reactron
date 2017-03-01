@@ -6,7 +6,7 @@
 2. Create documentation and tutorials for how to build and deploy a web application for total web development beginners or beginners to NodeJS, React or Electron, so that all can answer the elusive WHY of web development
  1. Describe the benefits of each node module added to the project and how this application leverages those benefits
  2. Utilize feedback and create an open and encouraging environment for developers and "ordinaries" alike.
-  1. This includes not calling people ordinaries
+   1. This includes not calling people ordinaries
 3. Automate boilerplate deployment based on different use cases and project goals
 
 
