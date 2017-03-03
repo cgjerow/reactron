@@ -4,30 +4,31 @@ import LoanFormInput from './LoanFormInput';
 class LoanForm extends Component {
     constructor(props) {
         super(props);
-        
+
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
-        
+
         this.state = {
 
         };
     }
-    
+
     handleSubmit(event) {
-        
+      console.log('Hello Moto')
+      event.preventDefault();
     }
-    
+
     handleChange(event) {
         const target = event.target;
         const value = target.type ===  'checkbox' ? target.checked : target.value;
         const name = target.name;
-        
+
         this.setState({
             [name]: value
         });
         console.log(this.state[name]);
     }
-    
+
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
@@ -91,7 +92,8 @@ class LoanForm extends Component {
                         <LoanFormInput header='Loan Interest Rate Buydown Second Payment Amount' type='text' name='LoanInterestRateBuydownSecondPayment' onChange={this.handleChange} />
                      </div>
                 </div>
-            </form>  
+                <input type="submit" value="Submit" />
+            </form>
         );
     }
 }
