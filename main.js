@@ -1,7 +1,7 @@
 const {app, BrowserWindow} = require('electron')
 const url = require('url')
 const path = require('path')
-const elemon = require('elemon')
+var client = require('electron-connect').client;
 let win
 
 var createWindow = function () {
@@ -10,19 +10,11 @@ var createWindow = function () {
   pathname: path.join(__dirname, 'index.html'),
   protocol: 'file:',
   slashes: true
-  }))
+  }));
+  client.create(win);
 }
 
 app.on('ready', () => {
 
   createWindow()
-
-  // Elemon live reload setup
-  elemon({
-    app: app,
-    mainfile: 'main.js',
-    bws: [
-      {bw: win, res: []}
-    ]
-  })
 })

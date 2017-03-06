@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron -r babel-register .",
+    "start": "gulp start",
     "build": "electron-packager ."
   },
   "author": "",
@@ -25,7 +25,8 @@
   },
   "devDependencies": {
     "electron": "^1.4.15",
+    "electron-connect": "^0.6.1",
     "electron-packager": "^8.5.2",
-    "elemon": "^5.0.2"
+    "gulp": "^3.9.1"
   }
 }
